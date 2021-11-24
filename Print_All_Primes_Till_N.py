@@ -16,7 +16,6 @@ import math
 def printAllPrimes(low,high):
     for num in range(low,high+1):#5
         count=0
-#         print(num)
         for i in range(2,int(math.sqrt(num))+1):
             if (num%i==0):
                 count+=1
@@ -24,7 +23,6 @@ def printAllPrimes(low,high):
 
         if count==0:
             print(num)
-
         else:
             continue
             

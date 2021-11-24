@@ -5,9 +5,6 @@ def count_Digits_In_A_Number(num):
         count+=1
     return count
 
-
-
-
 num=int(input())
 result=count_Digits_In_A_Number(num)
 print(result)
