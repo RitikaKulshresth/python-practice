@@ -23,13 +23,10 @@ class hashmap_Problems:
              if result[i]>max_value:
                  max_value=result[i]
                  max_char=i
-        # print(max_value,max_char)
         return (max_value,max_char)
 
-            # print(val)
     
 stringval=input("Input string:")
-# print(stringval, "hello")
 s1 = hashmap_Problems(stringval)
 
 print(s1.high_Freq_Char())
