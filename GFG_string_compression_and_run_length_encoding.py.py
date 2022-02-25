@@ -17,17 +17,17 @@ def string_compression2(arr):
         if prev_char == curr_char:
             count+=1
         else:
+    #this code is working if any character occur for 1 time
     #         result+=prev_char+str(count)
     #         count=1
     # result+=arr[-1]+str(count)
     # return result
-
+    #this code is working if any character occur for 1 time
             if count>1:
                 result+=prev_char+str(count)
                 count=1
             else:
                 result+=prev_char
-
     if count>1:
         result+=arr[-1]+str(count)
     return result

@@ -4,6 +4,9 @@
 def contigous_number(arr):
     
     list1=arr.replace('[','').replace(']','').split(',')
+    # print(list1)
+    # list2=arr.replace('[','').replace(']','')
+    # print(list2[1])
     out=[]
     for ele in list1:
         new_word=''
