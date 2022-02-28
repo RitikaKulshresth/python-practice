@@ -1,16 +1,17 @@
 def palindrome_sentence(s):
-    out=''
-    s=s.split()
-    for i in range(0,len(s)):
-        out+=s[i]
+    out=s.replace(' ', '').replace('.', '').replace(';','')
+    # out=''
+    # s=s.split()
+    # for i in range(0,len(s)):
+    #     out+=s[i]
     start=0
-    end=len(s)-1
+    end=len(out)-1
     while(start<=end):
-        if s[start]!=s[end]:
-            return False
+        if out[start]!=out[end]:
+            return 0
         start+=1
         end-=1
-    return True   
+    return 1   
 
 s='race car'
 print(palindrome_sentence(s))
